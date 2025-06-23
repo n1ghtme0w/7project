@@ -133,19 +133,7 @@ export function UserManagement() {
           )}
         </div>
 
-        {/* Общая статистика */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 mb-6">
-          <div className="grid grid-cols-2 gap-4 text-center">
-            <div>
-              <div className="text-xl font-bold text-blue-600">{boardUsers.length}</div>
-              <div className="text-xs text-gray-500 uppercase">ПОЛЬЗОВАТЕЛЕЙ</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-green-600">{totalCompleted}</div>
-              <div className="text-xs text-gray-500 uppercase">ВЫПОЛНЕНО</div>
-            </div>
-          </div>
-        </div>
+      
 
         {/* Форма добавления/редактирования пользователя */}
         {showAddUser && currentUser?.role === 'admin' && (
@@ -397,7 +385,7 @@ export function UserManagement() {
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="border-b border-gray-200" style={{ backgroundColor: '#ffcfda' }}>
+            <thead className="border-b border-gray-200" style={{ backgroundColor: '#a4d2fc' }}>
               <tr>
                 <th className="text-left py-4 px-6 font-medium text-gray-700 uppercase">ПОЛЬЗОВАТЕЛЬ</th>
                 <th className="text-left py-4 px-6 font-medium text-gray-700 uppercase">ВЫПОЛНЕНО</th>
